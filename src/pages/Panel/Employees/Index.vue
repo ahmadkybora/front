@@ -39,17 +39,15 @@
                                 <td>
                                     <a href="#"
                                        class="text-success text-center" data-toggle="modal"
-                                       data-target="#employee-show"><i
-                                            class="fa fa-eye"></i></a>
+                                       data-target="#employee-show">
+                                        <mdb-icon icon="eye" /></a>
 
                                     /
                                     <a href="#" data-id="employee.id"
-                                       class="text-primary text-center"><i
-                                            class="fa fa-edit"></i></a>
+                                       class="text-primary text-center"><mdb-icon icon="pen" /></a>
                                     /
                                     <a href="#"
-                                       class="text-danger"><i
-                                            class="fa fa-trash"></i></a>
+                                       class="text-danger"><mdb-icon icon="trash" /></a>
                                 </td>
                             </tr>
                             </tbody>
@@ -63,7 +61,7 @@
 </template>
 
 <script>
-    import { mdbRow, mdbCol, mdbCard, mdbCardBody, mdbTbl } from 'mdbvue'
+    import { mdbRow, mdbCol, mdbCard, mdbCardBody, mdbTbl, mdbIcon} from 'mdbvue'
     import {BASE_URL} from '../../../Config.js';
     import axios from 'axios';
     import Swal from 'sweetalert2';
@@ -79,7 +77,8 @@
             mdbCol,
             mdbCard,
             mdbCardBody,
-            mdbTbl
+            mdbTbl,
+            mdbIcon
         },
         data () {
             return {
